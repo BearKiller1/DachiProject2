@@ -13,7 +13,7 @@ import { FilterComponent } from './filter/filter.component';
 import { AllgamesComponent } from './allgames/allgames.component'
 
 
-import { RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [NewsComponent, GamesComponent, AboutComponent, CarouselComponent, StatsComponent, ProdnotfoundComponent, PagenotfoundComponent, DetailComponent, SearchComponent, FilterComponent, AllgamesComponent],
@@ -22,5 +22,5 @@ import { RouterModule} from '@angular/router';
     RouterModule
   ],
   exports: [NewsComponent, GamesComponent, AboutComponent, CarouselComponent, StatsComponent, ProdnotfoundComponent, PagenotfoundComponent, DetailComponent, SearchComponent, FilterComponent, AllgamesComponent]
-})
+}) 
 export class MenuModule { }

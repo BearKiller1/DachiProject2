@@ -10,7 +10,7 @@ export class CarouselComponent implements OnInit {
   constructor(private Obj:DataService) { }
 
   ngOnInit(): void {
-    this.data = this.Obj.DemoGetAll();
+    this.data = this.Obj.GetAll();
   }
 
 }

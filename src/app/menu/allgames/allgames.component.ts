@@ -14,6 +14,7 @@ export class AllgamesComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.sub = this.Obj.GetAll().subscribe( (tmp:any) =>{
       this.data = tmp.results;
+      console.log(this.data);
     });
   };
   ngOnDestroy(){ // !! The service's obsarvable does not need to be unsubscribed

@@ -50,20 +50,12 @@ const routes: Routes = [
     ]
   },
   {
-    path:'stats',
-    component:StatsComponent,
-  },
-  {
     path:'carousel', // <-- no need
     component:CarouselComponent,
   },
   {
     path:'about',
     component:AboutComponent,
-  },
-  {
-    path:'carousel', // <-- no need
-    component:CarouselComponent,
   },
   {
     path:"**",

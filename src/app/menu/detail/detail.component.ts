@@ -9,20 +9,13 @@ import { DataService} from '../data.service';
 export class DetailComponent implements OnInit {
   sub:any;
   data:any;
-  Desc:any;
+  id:any;
   constructor(private route:ActivatedRoute, private Obj:DataService) { }
 
   ngOnInit(): void {
-    this.sub = this.route.paramMap.subscribe( tmp =>{
-      var id = tmp.get('id');
-      this.Obj.GetById(id).subscribe( test =>{
-        this.data = test;
-      });
+    this.id= this.route.snapshot.paramMap.get('id');
+    this.Obj.GetById(this.id).subscribe( test =>{
+      this.data = test;
     });
-
-  }
-
-  convert(html:any){
-    this.Desc = html;
   }
 }
