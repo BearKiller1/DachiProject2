@@ -11,7 +11,8 @@ import { PagenotfoundComponent } from './menu/pagenotfound/pagenotfound.componen
 import { DetailComponent } from './menu/detail/detail.component';
 import { SearchComponent } from './menu/search/search.component';
 import { FilterComponent } from './menu/filter/filter.component';
-import { AllgamesComponent } from './menu/allgames/allgames.component'
+import { AllgamesComponent } from './menu/allgames/allgames.component';
+
 const routes: Routes = [
   {
     path:'news',
@@ -53,7 +54,7 @@ const routes: Routes = [
     component:StatsComponent,
   },
   {
-    path:'carousel',
+    path:'carousel', // <-- no need
     component:CarouselComponent,
   },
   {
@@ -61,7 +62,7 @@ const routes: Routes = [
     component:AboutComponent,
   },
   {
-    path:'carousel',
+    path:'carousel', // <-- no need
     component:CarouselComponent,
   },
   {

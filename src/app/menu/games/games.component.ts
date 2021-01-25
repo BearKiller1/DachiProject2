@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./games.component.sass']
 })
 export class GamesComponent implements OnInit {
-
+  searchicon = "https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png"
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
 
 }

@@ -8,7 +8,7 @@ import { DataService } from '../data.service';
 })
 export class AllgamesComponent implements OnInit, OnDestroy {
   data:any;
-  sub:any;
+  sub:any; // <-- no need !!
   constructor(private Obj:DataService) { }
 
   ngOnInit(): void {
@@ -16,7 +16,7 @@ export class AllgamesComponent implements OnInit, OnDestroy {
       this.data = tmp.results;
     });
   };
-  ngOnDestroy(){
+  ngOnDestroy(){ // !! The service's obsarvable does not need to be unsubscribed
     this.sub.unsubscribe();
   }
 

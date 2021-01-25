@@ -1,8 +1,8 @@
 <p>allgames works!</p>
-<input type="text" placeholder="Search...">
-<button>Filter</button>
-<div class='prod'>
-    <div class='box'  *ngFor="let item of data">
+
+<div class='Product-list'>
+    <div class='Cards'  *ngFor="let item of data">
+        {{item.name}}
         <img [src]="item.background_image">
         <button [routerLink]="['../detail', item.id]">More</button>
     </div>

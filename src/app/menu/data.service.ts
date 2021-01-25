@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -15,18 +16,18 @@ export class DataService {
     {id:5, name:"MineCraft", price:15, img:"https://images.techhive.com/images/article/2014/08/minecraft_logo-100371548-large.jpg"},
     {id:5, name:"MineCraft", price:15, img:"https://images.techhive.com/images/article/2014/08/minecraft_logo-100371548-large.jpg"},
     {id:5, name:"MineCraft", price:15, img:"https://images.techhive.com/images/article/2014/08/minecraft_logo-100371548-large.jpg"}
-  ];
+  ]; // <-- no need
 
   constructor(private http:HttpClient) { }
 
-  DemoGetAll(){
-     return this.data; 
+  DemoGetAll(){  // <-- no need
+     return this.data;
   };
   GetAll(){
     return this.http.get(this.link + "?" + this.api_key);
   };
 
-  DemoGetById(id:any): any{
+  DemoGetById(id:any): any{  // <-- no need
     for( let i=0; i!=this.data.length;i++){
       if ( id == this.data[i]['id']){
         return this.data[i];

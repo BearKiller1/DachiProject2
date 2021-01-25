@@ -1,7 +1,13 @@
-<img [src]="data.background_image" alt="">
-<h2> {{data.name}} </h2>
-<br><br><br><br>
-<p> {{data.description}} </p>
+<div class="details">
+  <img [src]="data.background_image" alt="img">
 
-<app-stats></app-stats>
-<app-carousel></app-carousel>
+  <div class="desc">
+    <h2> <span>Back</span> / {{data.name}} </h2>
+    <p [innerHtml]="Desc"> {{convert(data.description)}} </p>
+  </div>
+</div>
+
+<div class="other">
+  <app-stats></app-stats>
+  <app-carousel></app-carousel>
+</div>

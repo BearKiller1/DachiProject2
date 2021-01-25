@@ -9,6 +9,7 @@ import { DataService} from '../data.service';
 export class DetailComponent implements OnInit {
   sub:any;
   data:any;
+  Desc:any;
   constructor(private route:ActivatedRoute, private Obj:DataService) { }
 
   ngOnInit(): void {
@@ -19,7 +20,9 @@ export class DetailComponent implements OnInit {
       });
     });
 
-    
   }
 
+  convert(html:any){
+    this.Desc = html;
+  }
 }
